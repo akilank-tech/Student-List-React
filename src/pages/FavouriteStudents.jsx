@@ -24,7 +24,7 @@ const FavouriteStudent = () => {
     return (
         <div className="min-h-[100dvh] bg-[#d6c4fa] p-4 sm:p-8 flex justify-center">
             <div className="max-w-6xl w-full bg-[#c0a3fa] rounded-xl p-3 shadow-lg sm:p-8">
-            <div className="flex justify-between items-center gap-2 mb-5">
+            <div className="flex justify-between items-center gap-2 mb-6">
                 <div>
                     <h1 className="text-xl sm:text-3xl font-bold text-[#4C1D95] mb-1">Favourite Students</h1>
                 <p className="mt-2 text-[#334155] text-xs sm:text-base">Your favourite students List</p>
