@@ -25,7 +25,7 @@ const StudentList = () => {
                         <h1 className="text-2xl sm:text-3xl font-bold text-[#4C1D95]">🎓 Student List</h1>
                         <p className="text-[#334155] mt-2">Manage your student details</p>
                     </div>
-                    <Link to={'/FavouriteStudents'} className="bg-[#8A2BE2] text-center hover:bg-[#6A5ACD] text-white px-2 py-2 text-xs sm:px-4 sm:py-3 sm:text-base rounded-lg shadow-md transition">❤️View Favourites</Link>
+                    <Link to={'/FavouriteStudents'} className="bg-[#8A2BE2] text-center hover:bg-[#6A5ACD] text-white px-3 py-3 text-xs sm:px-4 sm:py-3 sm:text-base rounded-lg shadow-md transition">❤️View Favourites</Link>
                     </div>
                     <div className="bg-white rounded-2xl shadow-lg border border-[#E0E7FF] overflow-x-auto">
                         <table className="w-full text-left">
