@@ -47,6 +47,27 @@ const Studentcontext=(data)=>{
             Name:"Krithika",
             Department:"Bsc Computer Science", 
             isFavourite:false
+        },
+         {
+            id:7,
+            RollNumber:"20bcs107",
+            Name:"Divya",
+            Department:"Bsc Computer Science", 
+            isFavourite:false
+        },
+         {
+            id:8,
+            RollNumber:"20bcs108",
+            Name:"Saranya",
+            Department:"Bsc Computer Science", 
+            isFavourite:false
+        },
+         {
+            id:9,
+            RollNumber:"20bcs109",
+            Name:"Ankitha",
+            Department:"Bsc Computer Science", 
+            isFavourite:false
         }
     ])
     return(
