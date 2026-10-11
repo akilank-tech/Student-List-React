@@ -35,7 +35,7 @@ const Register = () => {
         navigate('/')
     }
     return (
-        <div className="min-h-[100dvh] h-[100dvh] overflow-hidden bg-[#d6c4fa] flex items-center justify-center p-3 sm:p-10">
+        <div className="min-h-[100dvh] overflow-hidden bg-[#d6c4fa] flex items-center justify-center p-3 sm:p-10">
             <div className="mx-auto bg-[#E6E6FA] w-full max-w-md rounded-2xl shadow-lg border border-[#C4B5FD] p-4 sm:p-8">
                 <h1 className="text-3xl font-bold text-[#4C1D95]">Hey Hi 👋</h1>
                 <p className="text-[#334155] mt-2 mb-6">Register a new student</p>
