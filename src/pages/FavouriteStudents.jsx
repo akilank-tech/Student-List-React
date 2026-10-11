@@ -47,11 +47,11 @@ const FavouriteStudent = () => {
                             {favouriteList.map((item, index) => {
                                 return (
                                     <tr key={item.id} className="border-b border-[#DDD6FE] hover:bg-[#EDE9FE] transition">
-                                        <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{index + 1}</td>
-                                        <td className="break-words p-2 text-xs sm:p-4 sm:text-base font-semibold text-[#4C1D95]">{item.Name}</td>
-                                        <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.RollNumber}</td>
-                                        <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.Department}</td>
-                                        <td className="p-1 sm:p-4"><button className="bg-[#8A2BE2] hover:bg-[#6A5ACD] cursor-pointer text-[#422006] px-3 py-2 rounded-lg font-medium transition" onClick={() => handleUnfavour(item.id)}>💔 Unfavourite</button></td>
+                                        <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{index + 1}</td>
+                                        <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base font-semibold text-[#4C1D95]">{item.Name}</td>
+                                        <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.RollNumber}</td>
+                                        <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.Department}</td>
+                                        <td className="p-1 sm:p-4"><button className="bg-[#8A2BE2] hover:bg-[#6A5ACD] cursor-pointer text-[#422006] px-1 py-2 text-[10px] font-medium sm:w-auto sm:px-3 sm:text-sm rounded-lg transition" onClick={() => handleUnfavour(item.id)}>💔 Unfavourite</button></td>
                                     </tr>
                                 )
                             })}
