@@ -22,7 +22,7 @@ const FavouriteStudent = () => {
 
 
     return (
-        <div className="min-h-[100dvh] h-[100dvh] overflow-hidden bg-[#d6c4fa] p-4 sm:p-8">
+        <div className="min-h-[100dvh] h-[100dvh] bg-[#d6c4fa] p-4 sm:p-8 flex justify-center">
             <div className="mx-auto max-w-6xl rounded-xl bg-[#E6E6FA] p-4 shadow-lg sm:p-8">
             <div className="flex justify-between items-center gap-2 mb-5">
                 <div>
@@ -32,7 +32,7 @@ const FavouriteStudent = () => {
             <Link to={'/'} className="bg-[#8A2BE2] hover:bg-[#6A5ACD] text-white text-xs sm:text-base px-3 py-4 sm:px-4 sm:py-3 rounded-xl shadow-md transition "><i class="fa-solid fa-arrow-left"></i>  Back to Student List</Link>
             </div>
             {favouriteList.length === 0 ? (<div className="rounded-lg border border-[#C4B5FD] bg-[#DDD6FE] p-8 text-center"><p className="text-lg font-semibold text-[#4c1D95]">💜 No Favourite Students Added Yet!</p><p className="mt-2 text-[#334155]">Go to Student List and Add your favourite students.</p></div>) :
-                (<div className="bg-white rounded-2xl shadow-lg border-[#E0E7FF] overflow-x-auto">
+                (<div className="bg-white rounded-2xl shadow-lg border-[#E0E7FF] overflow-x-auto max-h-[60vh] overflow-y-auto">
                     <table className="w-full text-left">
                         <thead>
                             <tr className="bg-[#6A5ACD] text-white">
