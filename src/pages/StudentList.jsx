@@ -42,10 +42,10 @@ const StudentList = () => {
                                 {
                                     studentList.map((item, index) => {
                                         return (<tr key={item.id} className="border-b border-[#DDD6FE]  hover:bg-[#EDE9FE] transition">
-                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{index + 1}</td>
-                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base font-semibold text-[#4C1D95]">{item.Name}</td>
-                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.RollNumber}</td>
-                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.Department}</td>
+                                            <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{index + 1}</td>
+                                            <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base font-semibold text-[#4C1D95]">{item.Name}</td>
+                                            <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.RollNumber}</td>
+                                            <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.Department}</td>
                                             <td className="p-1  sm:p-4">{item.isFavourite ? (<button disabled className="bg-gray-200 text-gray-500 px-1 py-2 text-[10px] font-medium sm:w-auto sm:px-3 sm:text-sm rounded-lg cursor-not-allowed">💜Favourited</button>) : (<button className="bg-[#FBB24] hover:bg-[#F59E0B] text-[#422006] px-1 py-2 text-[10px] font-medium sm:w-auto sm:px-3 sm:text-sm rounded-lg transition" onClick={() => { handleFav(item.id) }}>💟Favourite</button>)}</td>
                                         </tr>)
 
