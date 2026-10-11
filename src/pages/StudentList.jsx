@@ -18,7 +18,7 @@ const StudentList = () => {
     }
 
     return (
-        <div className="min-h-screen bg-[#d6c4fa] p-4 sm:p-8 flex justify-center items-center">
+        <div className="min-h-100dvh bg-[#d6c4fa] p-3 sm:p-8 flex justify-center items-center">
             <div className="max-w-6xl w-full rounded-xl p-4 bg-[#c0a3fa] shadow-lg sm:p-6 my-auto">
                 <div className="flex items-center justify-between gap-2 mb-6">
                     <div>
