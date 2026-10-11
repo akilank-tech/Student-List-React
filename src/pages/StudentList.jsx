@@ -19,7 +19,7 @@ const StudentList = () => {
 
     return (
         <div className="min-h-screen bg-[#d6c4fa] p-4 sm:p-8 flex justify-center">
-            <div className="max-w-6xl w-full rounded-xl p-3 pb-2 bg-[#c0a3fa] shadow-lg sm:p-8">
+            <div className="max-w-6xl w-full rounded-xl p-3 bg-[#c0a3fa] shadow-lg sm:p-8">
                 <div className="flex items-center justify-between gap-2 mb-6">
                     <div>
                         <h1 className="text-xl sm:text-3xl font-bold text-[#4C1D95] mb-1">🎓 Student List</h1>
@@ -46,7 +46,7 @@ const StudentList = () => {
                                             <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base font-semibold text-[#4C1D95]">{item.Name}</td>
                                             <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.RollNumber}</td>
                                             <td className="text-center break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.Department}</td>
-                                            <td className="p-1  sm:p-4">{item.isFavourite ? (<button disabled className="bg-gray-200 text-gray-500 px-1 py-2 text-[10px] font-medium sm:w-auto sm:px-3 sm:text-sm rounded-lg cursor-not-allowed">💜Favourited</button>) : (<button className="bg-[#FBB24] hover:bg-[#F59E0B] text-[#422006] px-1 py-2 text-[10px] font-medium sm:w-auto sm:px-3 sm:text-sm rounded-lg transition" onClick={() => { handleFav(item.id) }}>💟Favourite</button>)}</td>
+                                            <td className="p-1  sm:p-4">{item.isFavourite ? (<button disabled className="bg-gray-200 text-gray-500 px-1 py-2 text-[10px] font-medium sm:w-auto sm:px-3 sm:text-sm rounded-lg cursor-not-allowed">💜Favourited</button>) : (<button className="cursor-pointer bg-[#FBB24] hover:bg-[#F59E0B] text-[#422006] px-1 py-2 text-[10px] font-medium sm:w-auto sm:px-3 sm:text-sm rounded-lg transition" onClick={() => { handleFav(item.id) }}>💟Favourite</button>)}</td>
                                         </tr>)
 
                                     })
@@ -54,7 +54,7 @@ const StudentList = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className="mt-3 text-center ">
+                    <div className="mt-10 text-center ">
                     <p className="text-[#334155]">Don't have a Registeration? {""}<Link to={'/register'} className=" text-[#6A5ACD] hover:text-[#4C1D95] font-semibold underline">Register Now</Link></p>
                 </div>
             </div>
