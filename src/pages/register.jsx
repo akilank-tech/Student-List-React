@@ -36,6 +36,7 @@ const Register = () => {
     }
     return (
         <div className="min-h-[100dvh] overflow-hidden bg-[#d6c4fa] flex items-center justify-center p-3 sm:p-10">
+            <div className="max-w-6xl w-full bg-[#c0a3fa] rounded-xl p-3 shadow-lg sm:p-8">
             <div className="mx-auto bg-[#E6E6FA] w-full max-w-md rounded-2xl shadow-lg border border-[#C4B5FD] p-4 sm:p-8">
                 <h1 className="text-3xl font-bold text-[#4C1D95]">Hey Hi 👋</h1>
                 <p className="text-[#334155] mt-2 mb-6">Register a new student</p>
@@ -50,6 +51,7 @@ const Register = () => {
                     <p className="text-center text-[#334155] mt-4">Already Registered?<Link className="text-[#6A5ACD] hover:text-[#4C1D95] font-semibold underline" to={'/'}>Student List</Link></p>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

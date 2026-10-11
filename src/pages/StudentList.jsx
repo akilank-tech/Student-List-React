@@ -19,7 +19,7 @@ const StudentList = () => {
 
     return (
         <div className="min-h-[100vh] bg-[#d6c4fa] p-4 sm:p-8 flex justify-center">
-            <div className="max-w-6xl w-full rounded-xl p-3 bg-[#c0a3fa] shadow-lg sm:p-8">
+            <div className="max-w-6xl w-full rounded-xl pt-3 px-3 pb-2 bg-[#c0a3fa] shadow-lg sm:p-8">
                 <div className="flex items-center justify-between gap-2 mb-6">
                     <div>
                         <h1 className="text-xl sm:text-3xl font-bold text-[#4C1D95] mb-1">🎓 Student List</h1>
@@ -55,7 +55,7 @@ const StudentList = () => {
                         </table>
                     </div>
                     <div className="mt-6 text-center ">
-                    <p className="text-[#334155]">Don't have a Registeration? {""}<Link to={'/register'} className=" text-[#6A5ACD] hover:text-[#4C1D95] font-semibold underline underline-offset-4">Register Now</Link></p>
+                    <p className="text-[#334155]">Don't have a Registeration? {""}<Link to={'/register'} className=" text-[#6A5ACD] hover:text-[#4C1D95] font-semibold underline">Register Now</Link></p>
                 </div>
             </div>
         </div>
