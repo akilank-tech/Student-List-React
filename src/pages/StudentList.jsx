@@ -54,7 +54,7 @@ const StudentList = () => {
                             </tbody>
                         </table>
                     </div>
-                    <div className="my-6 text-center ">
+                    <div className="mt-6 text-center ">
                     <p className="text-[#334155]">Don't have a Registeration? {""}<Link to={'/register'} className=" text-[#6A5ACD] hover:text-[#4C1D95] font-semibold underline">Register Now</Link></p>
                 </div>
             </div>

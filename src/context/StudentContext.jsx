@@ -58,7 +58,7 @@ const Studentcontext=(data)=>{
          {
             id:8,
             RollNumber:"20bcs108",
-            Name:"Saranya",
+            Name:"Ananya",
             Department:"Bsc Computer Science", 
             isFavourite:false
         },
