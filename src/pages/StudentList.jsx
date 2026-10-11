@@ -29,24 +29,24 @@ const StudentList = () => {
                     </div>
                     <div className="bg-white rounded-2xl shadow-lg border border-[#E0E7FF] overflow-x-auto">
                         <table className="w-full text-left">
-                            <thead className="bg-[#6A5ACD] text-white">
-                                <tr>
-                                    <th className="p-4 text-center">S.No</th>
-                                    <th className="p-4 text-center">Name</th>
-                                    <th className="p-4 text-center">Roll Number</th>
-                                    <th className="p-4 text-center">Department</th>
-                                    <th className="p-4 text-center">Action</th>
-                                </tr>
+                            <thead>
+                               <tr className="bg-[#6A5ACD] text-white">
+                                <th className="w-[10%] p-2 text-xs sm:p-4 sm:text-base">S.No</th>
+                                <th className="w-[20%] p-2 text-xs sm:p-4 sm:text-base">Name</th>
+                                <th className="w-[23%] p-2 text-xs sm:p-4 sm:text-base">Roll Number</th>
+                                <th className="w-[25%] p-2 text-xs sm:p-4 sm:text-base">Department</th>
+                                <th className="w-[22%] p-2 text-xs sm:p-4 sm:text-base">Action</th>
+                            </tr>
                             </thead>
                             <tbody>
                                 {
                                     studentList.map((item, index) => {
                                         return (<tr key={item.id} className="border-b border-[#DDD6FE]  hover:bg-[#EDE9FE] transition">
-                                            <td className="p-4 text-[#334155]">{index + 1}</td>
-                                            <td className="p-4 font-semibold text-[#4C1D95]">{item.Name}</td>
-                                            <td className="p-4 text-[#334155]">{item.RollNumber}</td>
-                                            <td className="p-4 text-[#334155]">{item.Department}</td>
-                                            <td className="p-4">{item.isFavourite ? (<button disabled className="bg-gray-200 text-gray-500 px-3 py-2 rounded-lg cursor-not-allowed">💜Favourited</button>) : (<button className="bg-[#FBB24] hover:bg-[#F59E0B] text-[#422006] px-4 py-2 rounded-lg font-medium transition" onClick={() => { handleFav(item.id) }}>💟Favourite</button>)}</td>
+                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{index + 1}</td>
+                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base font-semibold text-[#4C1D95]">{item.Name}</td>
+                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.RollNumber}</td>
+                                            <td className="break-words p-2 text-xs sm:p-4 sm:text-base text-[#334155]">{item.Department}</td>
+                                            <td className="p-1  sm:p-4">{item.isFavourite ? (<button disabled className="bg-gray-200 text-gray-500 px-3 py-2 rounded-lg cursor-not-allowed">💜Favourited</button>) : (<button className="bg-[#FBB24] hover:bg-[#F59E0B] text-[#422006] px-4 py-2 rounded-lg font-medium transition" onClick={() => { handleFav(item.id) }}>💟Favourite</button>)}</td>
                                         </tr>)
 
                                     })
